@@ -59,6 +59,8 @@ def permutation(a, myString):  #  a - dummy in case of first call , b - n distin
 			#print ("Intermediate values of i : %d and myString_length_temp : %d" %(i, myString_length_temp))
 			#print ("Intermediate values of i : %d" %i)
 			#print temp_list_2
+			return temp_list_3
+	#return temp_list_3
 
 def merge_lists(x, list_b): #process [x] [abc, bcd]
         ret_list_2=[]
@@ -80,6 +82,10 @@ def merge_lists(x, list_b): #process [x] [abc, bcd]
 #comb( myString );
 #lst_input = ['xyz', 'tuv']
 #final_list=merge_lists('a', ['xyz', 'tuv']);
-permutation(my_Dummy, myString)
-ret_list.sort()
-print ret_list
+final_list=permutation(my_Dummy, myString)
+#ret_list.sort()
+#print ret_list
+length=len(final_list)
+print "****** Number of permutations : %d" %length
+print final_list
+
